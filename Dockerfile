@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy the build files to the Nginx HTML directory
-COPY build /usr/share/nginx/html
+COPY build /var/www/html
 
 # Expose port 80
 EXPOSE 80
